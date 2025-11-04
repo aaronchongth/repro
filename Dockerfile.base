@@ -9,8 +9,10 @@ FROM base AS source
 # Define an argument for the path to the some files
 ARG FIRST_FILE=docker.md
 ARG SECOND_FILE=python/README.md
+ARG THIRD_FILE=js/README.md
 
 # Copy some random files for fun
 RUN mkdir -p /opt/base/files
 ADD ${FIRST_FILE} /opt/base/files/docker.md
 ADD ${SECOND_FILE} /opt/base/files/README.md
+ADD ${THIRD_FILE} /opt/base/files/THIRD_README.md
