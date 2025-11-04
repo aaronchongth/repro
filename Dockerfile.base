@@ -1,0 +1,16 @@
+FROM ros:jazzy-ros-core AS base
+
+SHELL [ "/bin/bash" , "-c" ]
+
+WORKDIR /opt/base
+
+FROM base AS source
+
+# Define an argument for the path to the some files
+ARG FIRST_FILE=docker.md
+ARG SECOND_FILE=python/README.md
+
+# Copy some random files for fun
+RUN mkdir -p /opt/base/files
+ADD ${FIRST_FILE} /opt/base/files/docker.md
+ADD ${SECOND_FILE} /opt/base/files/README.md
