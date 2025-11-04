@@ -35,4 +35,4 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository }}/test-base:${{ github.event.inputs.tag }}
-          context: Dockerfile.base
+          file: ./Dockerfile.base
