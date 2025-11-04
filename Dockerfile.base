@@ -15,4 +15,3 @@ ARG THIRD_FILE=js/README.md
 RUN mkdir -p /opt/base/files
 ADD ${FIRST_FILE} /opt/base/files/docker.md
 ADD ${SECOND_FILE} /opt/base/files/README.md
-ADD ${THIRD_FILE} /opt/base/files/THIRD_README.md
