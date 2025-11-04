@@ -1,3 +1,5 @@
+# NEW CHANGES IN NEW BRANCH
+
 # docker :school_satchel: :whale:
 
 <div align="center">
@@ -10,11 +12,11 @@
 
 Working on projects with crazy amount of dependencies cause issues depicted above, where portability breaks down. Docker is a great tool that solves these issues by allowing users to build images and containers that represent the ideal development environment for such projects or applications to run flawlessly.
 
-I don't claim to be a Docker expert, however some of these layman concepts helped me greatly to understand the uses of Docker and what is happening under the hood. 
+I don't claim to be a Docker expert, however some of these layman concepts helped me greatly to understand the uses of Docker and what is happening under the hood.
 
 In short, Docker is a tool that chisels a divide between the underlying kernel of your work station, and the rest of the required components for your application, this would normally include the OS, libraries and binaries. A good analogy would be that Docker separates the system kernel/hardware-land from the user-land.
 
-I likened the kernel level to be more hardware oriented, and therefore you could run an application that requires `Ubuntu 16.04` using Docker on an `Ubuntu 18.04` machine with no problems at all. 
+I likened the kernel level to be more hardware oriented, and therefore you could run an application that requires `Ubuntu 16.04` using Docker on an `Ubuntu 18.04` machine with no problems at all.
 
 There are however exceptions, for example GPU interfaces, drivers and compatibility would fall under hardware related operations, therefore more advanced features of Docker will be needed to work with any dockerized applications that required GUI or GPU computations.
 
@@ -95,7 +97,7 @@ Alternatively, you could run docker images regardless of having a copy of it or 
 docker run -it ubuntu
 ```
 
-The above starts a new docker container from the image called `ubuntu`, and allows the user to interact with the dockerized OS through `bash`, due to the `i` flag which stands for interactive and `t` for `tty`. 
+The above starts a new docker container from the image called `ubuntu`, and allows the user to interact with the dockerized OS through `bash`, due to the `i` flag which stands for interactive and `t` for `tty`.
 
 To exit such a container, just use `Ctrl + d`.
 
