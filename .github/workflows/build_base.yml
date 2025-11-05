@@ -8,6 +8,8 @@ on:
         required: true
         type: string
         default: "latest"
+  pull_request:
+      types: [opened, synchronize, reopened]
 
 defaults:
   run:
